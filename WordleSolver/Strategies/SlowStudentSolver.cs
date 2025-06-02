@@ -36,7 +36,7 @@ public sealed class SlowStudentSolver : IWordleSolverStrategy
 		    .Distinct()
 		    .ToList();
     }
-
+    
     /// <inheritdoc/>
     public void Reset()
     {
@@ -71,7 +71,7 @@ public sealed class SlowStudentSolver : IWordleSolverStrategy
             // program won't work. Regular Wordle allows users to guess any five-letter
             // word from a much larger dictionary, but we restrict it to the words that
             // can actually be chosen by WordleService to make it easier on you.
-            string firstWord = "abyss"; 
+            string firstWord = "crane"; 
 
             // Filter _remainingWords to remove any words that don't match the first word
             _remainingWords.Remove(firstWord);
